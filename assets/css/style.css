@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/static/Inter-Bold.ttf");
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+
+  background-color: #141414;
+
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  padding-inline: 1rem;
+}
+
+.card {
+  width: min(100%, 50rem);
+  background: var(--grey-800);
+  color: var(--white);
+  padding: 4rem;
+  border-radius: 12px;
+
+  display: grid;
+  gap: 2.4rem;
+  place-items: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: var(--fw-600);
+}
+
+img {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 50%;
+}
+
+.location {
+  font-size: 1.4rem;
+  font-weight: var(--fw-700);
+  color: var(--green);
+}
+
+ul {
+  display: grid;
+  gap: 1.6rem;
+  width: 100%;
+  place-items: center;
+}
+
+li {
+  width: 90%;
+  display: flex;
+  gap: 1.6rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  width: 100%;
+  background-color: var(--grey-700);
+  padding: 1.2rem;
+  border-radius: 8px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  background-color: var(--green);
+  color: black;
+  outline: none;
+}
